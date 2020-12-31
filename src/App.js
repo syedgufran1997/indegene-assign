@@ -6,6 +6,7 @@ import Events from "./components/events/Events";
 import Footer from "./components/footer/Footer";
 import HomeBanner from "./components/homeBanner/HomeBanner";
 import Navbar from "./components/navbar/Navbar";
+ import Testimony from "./components/testimoy/Testimony";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
      <Navbar />
      <HomeBanner />
      <Company />
+     <Testimony />
      <Events />
      <Blog />
      <Footer />
