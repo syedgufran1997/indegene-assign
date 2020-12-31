@@ -39,7 +39,14 @@ const Image = styled.img`
       background-color:#C7B198;
       color:white;
       cursor:pointer;
-  }
+
+      &:hover{
+        color:black;
+        background-color:lightgrey;
+      }
+  
+    }
+  
   @media screen and (min-width:768px){
       display:block;
   }
