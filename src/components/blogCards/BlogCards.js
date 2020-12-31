@@ -5,12 +5,11 @@ import Lap from "../../Assets/lap.png"
 const CardsWrapper = styled.div`
 width:95%;
 margin:1em auto;
-max-width:380px;
+max-width:300px;
 background-color:white;
 
 img{
     width:100%;
-    height:100%;
   object-fit: fill;
 
 }
@@ -29,7 +28,7 @@ margin-top:-0.5em;
     text-align:center;
     width:30%;
 
-
+   
     h1,h4,h4{
         color:#B69874;
         font-weight:500;

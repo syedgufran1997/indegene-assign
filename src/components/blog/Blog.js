@@ -3,9 +3,11 @@ import styled from "styled-components"
 import BlogCards from '../blogCards/BlogCards'
 
 const BlogWrapper = styled.div`
-background-color:lightgray;
+background-color: rgba(240, 240, 240, 0.945);
 
 .heading{
+    padding-top:5em;
+    padding-bottom:1em;
     h2
     {
     text-align:center;
