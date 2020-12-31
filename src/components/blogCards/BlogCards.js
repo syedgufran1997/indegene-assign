@@ -4,8 +4,8 @@ import Lap from "../../Assets/lap.png"
 
 const CardsWrapper = styled.div`
 width:95%;
-margin:1em auto;
-max-width:300px;
+margin:2em auto 6em;
+max-width:340px;
 background-color:white;
 
 img{
@@ -24,20 +24,25 @@ margin-top:-0.5em;
     background-color:#ddcdb8bb;
     display:flex;
     flex-direction:column;
-    justify-content:center;
     text-align:center;
     width:30%;
+    padding-top:2em;
+    padding-bottom:7em;
+    height:100%;
 
-   
+    h1{
+        font-size:3em;
+    }
     h1,h4,h4{
         color:#B69874;
-        font-weight:500;
+        font-weight:400;
     }
 }
 .contentWrap{
     display:flex;
     flex-direction:column;
     width:70%;
+    padding:2em 1em 5em;
 
     h3{
         font-weight:500;
@@ -46,12 +51,12 @@ margin-top:-0.5em;
         color:#999999;
         font-size:0.8em;
         font-weight:500;
-
+        margin-top:1em;
     }
 }
 `
 
-const BlogCards = () => {
+const BlogCards = (props) => {
     return (
         <>
             <CardsWrapper>
@@ -63,8 +68,8 @@ const BlogCards = () => {
                     <h4>2019</h4>
                     </div>
                     <div className="contentWrap">
-                        <h3>Press Release</h3>
-                        <p>Indegene Acquires DT Associates, Provides End-To-End Enterprise Solution for Customer Excellence — from Consulting to Operations</p>
+                        <h3>{props.heading}</h3>
+                        <p>{props.content}</p>
                     </div>
                 </BlogContent>
             </CardsWrapper>
